@@ -50,6 +50,9 @@ pre {
 
 ## Hacks
 
+This is a copy of the slides from github.com/kenrussell/siggraph2012course with content added for Canvas and CSS portions of the course.
+There are also local versions of some popular CSS and Canvas examples from the web (in the demos folder).
+
 The original slides come from <a
 href="http://io-2012-slides.googlecode.com">http://io-2012-slides.googlecode.com</a>. They
 have been modified to create a SIGGRAPH 2012 template.
