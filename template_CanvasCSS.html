@@ -135,20 +135,16 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
 
 
-  <!-- Canvas title slide
+  <!-- Canvas intro slide -->
   <slide>
       <hgroup><h1 class="title">Canvas</h1></hgroup>
   <article>
-
-      <table>
-          <tr style="width: 100%">
-              <td><img src="images/canvasTag.png" width="100%"></td>
-          </tr>
-      </table>
-
+	<div class="build">
+    <img src="images/canvasTag.png" width="100%"></td>
+    <img src="images/canvasPaint.png" style="position: absolute; left: 30%; top: 30%; width: 60%; height: 60%; border-style:solid; border-width: 2px; border-color: rgb(0,0,0);">
+	</div>
   </article>
   </slide>
-  -->
 
 
   <!-- 2D Drawing Context -->
@@ -159,7 +155,6 @@ URL: https://code.google.com/p/io-2012-slides
   <article>
 
       <div class="build">
-          <section>
         <pre class="prettyprint" data-lang="javascript">
 &lt;script type='text/javascript'&gt;
 &lt;html&gt;
@@ -168,13 +163,16 @@ URL: https://code.google.com/p/io-2012-slides
 function initCanvas() {
     var canvas = document.getElementById("mycanvas");
     if (canvas.getContext) {
-           var context = canvas.getContext("2d");
+           <b>var context = canvas.getContext("2d");</b>
            //issue drawing commands here...
      }
   }
 }
 &lt;/script&gt;
 &lt;/head&gt;
+</pre>
+
+<!-- <pre class="prettyprint" data-lang="javascript">
 &lt;body onload="initCanvas()"&gt;
 &lt;canvas id="mycanvas" width=“150" height="150"
 style="position: relative; left:100; top: 25; background-color:#CCCCFF"&gt;
@@ -182,10 +180,7 @@ style="position: relative; left:100; top: 25; background-color:#CCCCFF"&gt;
 &lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-
-</pre>
-          </section>
-          <img src="images/canvasPaint.png" style="position: absolute; left: 40%; top: 40%; width: 40%; height: 40%; border-style:solid; border-width: 2px; border-color: rgb(0,0,0);">
+</pre> -->         
       </div>
   </article>
   </slide>
@@ -651,6 +646,50 @@ background-color:#CCCCFF; position: relative; left: 20px; top: 20px; width:200px
       </article>
   </slide>
 
+  <!-- Canvas and CSS Demos -->
+  <slide>
+  <hgroup><h1>Demo, Take-Aways, and Questions</h1></hgroup>
+      <article>
+	  <div class="columns-2">
+	
+          <p style="font-size: 150%">Ninja Authoring Tool</p>
+		  
+		  <ul>
+		  <li>Open Source, BSD license
+		  <li>freely available on Chrome Store and Github
+		  </ul>
+          <div style="align: center; vertical-align: middle"><img src="images/ninja_icon_128.png"></div>
+			<div class="build">
+			<section>
+		  <p  style="font-size: 150%">Take-aways</p>
+  <ul>
+  <li>large "native-class" applications now possible on the web
+  <li>graphics applications <b>especially</b> suitable as web apps
+  </ul>
+  </section>
+  <p style="font-size: 200%">Questions?</p>
+  </div>
+</div>
+      </article>
+  </slide>
+
+  <!-- take-home message -->
+  <slide>
+  <hgroup>
+  <h1>Take-aways</h1>
+  </hgroup>
+  <article style="font-size: 150%">
+  <p>Take-aways</p>
+  <ul>
+  <li>"Native-class" applications now possible on the web
+  <li>Graphics applications <i>especially</i> suitable as web apps
+  </ul>
+  <div class="build">
+	<section><p style="font-size: 150%">Questions?</p></section>
+  </div>
+  </article>
+  </slide>
+  
   <!-- CSS Summary-->
   <slide>
       <article>
